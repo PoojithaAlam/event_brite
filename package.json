@@ -1,6 +1,25 @@
 {
   "dependencies": {
     "dotenv": "^16.3.1",
+    "express": "^4.18.2",
     "react-bootstrap": "^2.9.2"
-  }
+  },
+  "name": "eventbrite",
+  "version": "1.0.0",
+  "description": "display event and shop for event",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/euiri/eventbrite.git"
+  },
+  "author": "team 1 (November 2023)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/euiri/eventbrite/issues"
+  },
+  "homepage": "https://github.com/euiri/eventbrite#readme"
 }
