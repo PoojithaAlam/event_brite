@@ -1,7 +1,8 @@
 import React from 'react';
 
 const Map = ( {address} ) => {
-  const formattedAddress = address.replace(/ /g, '+');
+  const addressCheck = address || ''
+  const formattedAddress = addressCheck.replace(/ /g, '+');
   const mapUrl = `https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_MAP_API_KEY}&q=${formattedAddress}`;
   
 

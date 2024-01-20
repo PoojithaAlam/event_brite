@@ -17,7 +17,7 @@ export const EventScreen = () => {
     fetchEvent()
   })
   const locationVenue = event.location && event.location.venue;
-  const locationAddress = String(event.location && event.location.address);
+  const locationAddress = event.location && event.location.address;
 
 
 return (
