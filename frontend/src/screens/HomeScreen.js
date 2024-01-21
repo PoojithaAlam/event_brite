@@ -18,7 +18,7 @@ const HomeScreen = () => {
       <h1>Best Events and Things to Do</h1>
       <Row>
         {events.map(p => (
-          <Col sm={12} md={6} lg={4} xl={3}>
+          <Col key={p._id} sm={12} md={6} lg={4} xl={3}>
             <Event event={p} />
           </Col>
           ))

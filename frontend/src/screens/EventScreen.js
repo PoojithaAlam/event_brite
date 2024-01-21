@@ -32,7 +32,7 @@ return (
       </Row>
       <Row>
          <ListGroup.Item style={{ marginTop: "20px"}}>
-            &nbsp; <i class="fa-solid fa-user-plus">
+            &nbsp; <i className="fa-solid fa-user-plus">
                 &nbsp;<b>Followers: {event.follower}</b>
               </i>
               <Button
@@ -61,28 +61,28 @@ return (
             <ListGroup.Item>
               <Row>
                 <b>
-                  <i class="fa-solid fa-calendar-days"></i> Date & Time :{event.date_time}
+                  <i className="fa-solid fa-calendar-days"></i> Date & Time :{event.date_time}
                 </b>
               </Row>
             </ListGroup.Item>
             <ListGroup.Item>
               <Row>
                 <b>
-                  <i class="fa-solid fa-clock"></i> Duration : {event.duration}
+                  <i className="fa-solid fa-clock"></i> Duration : {event.duration}
                 </b>
               </Row>
             </ListGroup.Item>
             <ListGroup.Item>
               <Row>
                 <b>
-                  <i class="fa-solid fa-building"></i> Venue : {locationVenue}
+                  <i className="fa-solid fa-building"></i> Venue : {locationVenue}
                 </b>
               </Row>
             </ListGroup.Item>
             <ListGroup.Item>
               <Row>
                 <b>
-                  <i class="fa-solid fa-location-dot"></i> Location : {locationAddress}
+                  <i className="fa-solid fa-location-dot"></i> Location : {locationAddress}
                   
                 </b>
                 <Map address={locationAddress} />
