@@ -1,6 +1,5 @@
 const events = [
   {
-    _id: '1',
     name: 'Paint and sip art class at Chapman Cider in Olympia',
     image: '/images/paint.jpg',
     description:
@@ -14,10 +13,9 @@ const events = [
       },      
     price: 45,
     spaceLeft: 10,
-    follower: 1200,
+    followers: 1200,
   },
   {
-    _id: '2',
     name: 'Valentine\'s Day beginner cookie decorating',
     image: '/images/cookie.jpg',
     description: 'Get ready to celebrate Valentine\'s Day by learning the  basics of cookie decorating in a fun and interactive in-person event!',
@@ -30,10 +28,9 @@ const events = [
       },      
     price: 65,
     spaceLeft: 5,
-    follower: 15,
+    followers: 15,
   },
   {
-    _id: '3',
     name: '4 the Love Gala',
     image: '/images/gala.jpg',
     description:
@@ -47,10 +44,9 @@ const events = [
       },      
     price: 100,
     spaceLeft: 100,
-    follower: 500,
+    followers: 500,
   },
   {
-    _id: '4',
     name: 'Italian Baking Class: Tiramisu & Pistachio Biscotti',
     image: '/images/cook.jpg',
     description:
@@ -64,10 +60,9 @@ const events = [
       },      
     price: 85,
     spaceLeft: 510,
-    follower: 20,
+    followers: 20,
   },
   {
-    _id: '5',
     name: 'Joanna Sternberg @ FREMONT ABBEY',
     image: '/images/music.jpg',
     description:
@@ -81,10 +76,9 @@ const events = [
       },      
     price: 21,
     spaceLeft: 25,
-    follower: 6000,
+    followers: 6000,
   },
   {
-    _id: '6',
     name: 'Simply 3 - Back by Popular Demand Again',
     image: '/images/music2.jpg',
     description:
@@ -98,7 +92,7 @@ const events = [
       },      
     price: 25,
     spaceLeft: 50,
-    follower: 186,
+    followers: 186,
   }
 ]
 
