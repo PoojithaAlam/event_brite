@@ -1,13 +1,25 @@
-import React from "react";
+import React, {useEffect, useState} from 'react'
+import axios from 'axios'
 import { useParams, Link } from "react-router-dom";
 import { Row, Col, Image, Card, Button, ListGroup } from "react-bootstrap";
-import events from "../events";
 import "./EventScreen.css";
 import Map from "../components/Map";
 
 export const EventScreen = () => {
   const params = useParams();
-  const event = events.find((p) => p._id === params.id);
+  const [event, setEvent] = useState({})
+
+  useEffect( () => {
+    const fetchEvent = async() => {
+      const {data} = await axios.get(`/api/event/${params.id}`)
+      setEvent(data)
+    }
+    fetchEvent()
+  })
+  const locationVenue = event.location && event.location.venue;
+  const locationAddress = event.location && event.location.address;
+
+
 return (
     <>
       <Link className="btn btn-light my-3" to="/">
@@ -20,7 +32,7 @@ return (
       </Row>
       <Row>
          <ListGroup.Item style={{ marginTop: "20px"}}>
-            &nbsp; <i class="fa-solid fa-user-plus">
+            &nbsp; <i className="fa-solid fa-user-plus">
                 &nbsp;<b>Followers: {event.follower}</b>
               </i>
               <Button
@@ -49,31 +61,31 @@ return (
             <ListGroup.Item>
               <Row>
                 <b>
-                  <i class="fa-solid fa-calendar-days"></i> Date & Time :{event.date_time}
+                  <i className="fa-solid fa-calendar-days"></i> Date & Time :{event.date_time}
                 </b>
               </Row>
             </ListGroup.Item>
             <ListGroup.Item>
               <Row>
                 <b>
-                  <i class="fa-solid fa-clock"></i> Duration : {event.duration}
+                  <i className="fa-solid fa-clock"></i> Duration : {event.duration}
                 </b>
               </Row>
             </ListGroup.Item>
             <ListGroup.Item>
               <Row>
                 <b>
-                  <i class="fa-solid fa-building"></i> Venue : {event.location.venue}
+                  <i className="fa-solid fa-building"></i> Venue : {locationVenue}
                 </b>
               </Row>
             </ListGroup.Item>
             <ListGroup.Item>
               <Row>
                 <b>
-                  <i class="fa-solid fa-location-dot"></i> Location : {event.location.address}
+                  <i className="fa-solid fa-location-dot"></i> Location : {locationAddress}
                   
                 </b>
-                <Map address={event.location.address} />
+                <Map address={locationAddress} />
               </Row>
              </ListGroup.Item>
           </ListGroup>

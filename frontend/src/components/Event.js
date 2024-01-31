@@ -29,7 +29,7 @@ const Event = ({event}) => {
           
       <Card.Text as ='div'style={{ height: '4rem', fontSize: '14px'}}>   
           <br/>
-          <i class="fa-solid fa-location-dot"></i> {event.location.address}
+          <i className="fa-solid fa-location-dot"></i> {event.location.address}
         <br/>
         </Card.Text>
         <Card.Text as ='div'>Ticket Price: 

@@ -1,6 +1,5 @@
 const events = [
   {
-    _id: '1',
     name: 'Paint and sip art class at Chapman Cider in Olympia',
     image: '/images/paint.jpg',
     description:
@@ -9,15 +8,14 @@ const events = [
     date_time: "Feb 7,2024 Wednesday 6PM",
     duration: "3hrs",
     location: {
-      "venue": "Chapman Cider",
-      "address": "8024 River Dr SE suite 303 Olympia, WA 98501"
+      venue: "Chapman Cider",
+      address: "8024 River Dr SE suite 303 Olympia, WA 98501"
       },      
     price: 45,
     spaceLeft: 10,
-    follower: 1200,
+    followers: 1200,
   },
   {
-    _id: '2',
     name: 'Valentine\'s Day beginner cookie decorating',
     image: '/images/cookie.jpg',
     description: 'Get ready to celebrate Valentine\'s Day by learning the  basics of cookie decorating in a fun and interactive in-person event!',
@@ -25,15 +23,14 @@ const events = [
     date_time: "Feb 10,2024 Saturday 3PM",
     duration: "3hrs",
     location: {
-      "venue": "30 Dakota Heights Dr",
-      "address": "30 Dakota Heights Drive Cle Elum, WA 989221"
+      venue: "30 Dakota Heights Dr",
+      address: "30 Dakota Heights Drive Cle Elum, WA 989221"
       },      
     price: 65,
     spaceLeft: 5,
-    follower: 15,
+    followers: 15,
   },
   {
-    _id: '3',
     name: '4 the Love Gala',
     image: '/images/gala.jpg',
     description:
@@ -42,15 +39,14 @@ const events = [
     date_time: "Feb 7,2024 Wednesday 5PM",
     duration: "4hrs",
     location: {
-      "venue": "Nicole's Bar",
-      "address": "109 Legion Way Southwest Olympia, WA 98501"
+      venue: "Nicole's Bar",
+      address: "109 Legion Way Southwest Olympia, WA 98501"
       },      
     price: 100,
     spaceLeft: 100,
-    follower: 500,
+    followers: 500,
   },
   {
-    _id: '4',
     name: 'Italian Baking Class: Tiramisu & Pistachio Biscotti',
     image: '/images/cook.jpg',
     description:
@@ -59,15 +55,14 @@ const events = [
     date_time: "Feb 24,2024 Saturday 1PM",
     duration: "3hrs",
     location: {
-      "venue": "Layered Cake Artistry",
-      "address": "117 West Kennewick Avenue Kennewick, WA 99336"
+      venue: "Layered Cake Artistry",
+      address: "117 West Kennewick Avenue Kennewick, WA 99336"
       },      
     price: 85,
     spaceLeft: 510,
-    follower: 20,
+    followers: 20,
   },
   {
-    _id: '5',
     name: 'Joanna Sternberg @ FREMONT ABBEY',
     image: '/images/music.jpg',
     description:
@@ -76,15 +71,14 @@ const events = [
     date_time: "Feb 24,2024 Saturday 8PM",
     duration: "1.5hrs",
     location: {
-      "venue": "Fremont Abbey Arts Center",
-      "address": "4272 Fremont Avenue North Seattle, WA 98103"
+      venue: "Fremont Abbey Arts Center",
+      address: "4272 Fremont Avenue North Seattle, WA 98103"
       },      
     price: 21,
     spaceLeft: 25,
-    follower: 6000,
+    followers: 6000,
   },
   {
-    _id: '6',
     name: 'Simply 3 - Back by Popular Demand Again',
     image: '/images/music2.jpg',
     description:
@@ -93,13 +87,14 @@ const events = [
     date_time: "Feb 25,2024 Sunday 3PM",
     duration: "2hrs",
     location: {
-      "venue": "Barrister Winery",
-      "address": "1213 West Railroad Alley Spokane, WA 99201"
+      venue: "Barrister Winery",
+      address: "1213 West Railroad Alley Spokane, WA 99201"
       },      
     price: 25,
     spaceLeft: 50,
-    follower: 186,
+    followers: 186,
   }
 ]
 
-export default events
+// module.exports = events
+export default events;
