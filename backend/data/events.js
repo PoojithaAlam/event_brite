@@ -8,8 +8,8 @@ const events = [
     date_time: "Feb 7,2024 Wednesday 6PM",
     duration: "3hrs",
     location: {
-      "venue": "Chapman Cider",
-      "address": "8024 River Dr SE suite 303 Olympia, WA 98501"
+      venue: "Chapman Cider",
+      address: "8024 River Dr SE suite 303 Olympia, WA 98501"
       },      
     price: 45,
     spaceLeft: 10,
@@ -23,8 +23,8 @@ const events = [
     date_time: "Feb 10,2024 Saturday 3PM",
     duration: "3hrs",
     location: {
-      "venue": "30 Dakota Heights Dr",
-      "address": "30 Dakota Heights Drive Cle Elum, WA 989221"
+      venue: "30 Dakota Heights Dr",
+      address: "30 Dakota Heights Drive Cle Elum, WA 989221"
       },      
     price: 65,
     spaceLeft: 5,
@@ -39,8 +39,8 @@ const events = [
     date_time: "Feb 7,2024 Wednesday 5PM",
     duration: "4hrs",
     location: {
-      "venue": "Nicole's Bar",
-      "address": "109 Legion Way Southwest Olympia, WA 98501"
+      venue: "Nicole's Bar",
+      address: "109 Legion Way Southwest Olympia, WA 98501"
       },      
     price: 100,
     spaceLeft: 100,
@@ -55,8 +55,8 @@ const events = [
     date_time: "Feb 24,2024 Saturday 1PM",
     duration: "3hrs",
     location: {
-      "venue": "Layered Cake Artistry",
-      "address": "117 West Kennewick Avenue Kennewick, WA 99336"
+      venue: "Layered Cake Artistry",
+      address: "117 West Kennewick Avenue Kennewick, WA 99336"
       },      
     price: 85,
     spaceLeft: 510,
@@ -71,8 +71,8 @@ const events = [
     date_time: "Feb 24,2024 Saturday 8PM",
     duration: "1.5hrs",
     location: {
-      "venue": "Fremont Abbey Arts Center",
-      "address": "4272 Fremont Avenue North Seattle, WA 98103"
+      venue: "Fremont Abbey Arts Center",
+      address: "4272 Fremont Avenue North Seattle, WA 98103"
       },      
     price: 21,
     spaceLeft: 25,
@@ -87,8 +87,8 @@ const events = [
     date_time: "Feb 25,2024 Sunday 3PM",
     duration: "2hrs",
     location: {
-      "venue": "Barrister Winery",
-      "address": "1213 West Railroad Alley Spokane, WA 99201"
+      venue: "Barrister Winery",
+      address: "1213 West Railroad Alley Spokane, WA 99201"
       },      
     price: 25,
     spaceLeft: 50,
