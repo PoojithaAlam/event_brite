@@ -25,14 +25,14 @@ const HomeScreen = () => {
         loading ? (<Loader />)
           : error ? (<Message variant='danger'> {error}</Message>)
             : 
-              <Row>
+              (<Row>
                 {events.map(p => (
                   <Col key={p._id} sm={12} md={6} lg={4} xl={3}>
                     <Event event={p} />
                   </Col>
                   ))
                 }
-            </Row>
+            </Row>)
       
       }
       

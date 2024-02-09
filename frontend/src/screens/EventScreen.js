@@ -1,21 +1,25 @@
-import React, {useEffect, useState} from 'react'
-import axios from 'axios'
+import React, {useEffect} from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import { useParams, Link } from "react-router-dom";
 import { Row, Col, Image, Card, Button, ListGroup } from "react-bootstrap";
+import { listEventDetails } from '../actions/eventActions';
+import Loader from '../components/Loader'
+import Message from '../components/Message'
 import "./EventScreen.css";
 import Map from "../components/Map";
 
 export const EventScreen = () => {
   const params = useParams();
-  const [event, setEvent] = useState({})
+  const dispatch = useDispatch()
+  
 
   useEffect( () => {
-    const fetchEvent = async() => {
-      const {data} = await axios.get(`/api/events/${params.id}`)
-      setEvent(data)
-    }
-    fetchEvent()
-  })
+    dispatch(listEventDetails(params.id))
+  },[dispatch, params])
+
+  const eventDetails = useSelector((state) => state.eventDetails)
+  const {loading, event, error} = eventDetails
+  
   const locationVenue = event.location && event.location.venue;
   const locationAddress = event.location && event.location.address;
 
@@ -25,8 +29,12 @@ return (
       <Link className="btn btn-light my-3" to="/">
         Go Back
       </Link>
+      {
+        loading ? (<Loader />) 
+        : error? (<Message variant='danger'>{error}</Message>) : (
+          <>
       <Row>
-       <div className="containerStyle">
+        <div className="containerStyle">
             <Image src={event.image} alt={event.name} fluid style={{ maxWidth: "100%" , height:"50vh"}}/>
           </div>
       </Row>
@@ -127,6 +135,11 @@ return (
             </Card>
         </Col>
       </Row>
+      </>
+      )
+      }
     </>
-  );
-};
+  )
+}
+
+export default EventScreen
