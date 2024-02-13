@@ -1,7 +1,7 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { useParams, Link } from "react-router-dom";
-import { Row, Col, Image, Card, Button, ListGroup } from "react-bootstrap";
+import { useParams, Link, useNavigate } from "react-router-dom";
+import { Row, Col, Form, Image, Card, Button, ListGroup } from "react-bootstrap";
 import { listEventDetails } from '../actions/eventActions';
 import Loader from '../components/Loader'
 import Message from '../components/Message'
@@ -9,8 +9,11 @@ import "./EventScreen.css";
 import Map from "../components/Map";
 
 export const EventScreen = () => {
+
+  const [qty, setQty] = useState(1)
   const params = useParams();
   const dispatch = useDispatch()
+  const navigate = useNavigate()
   
 
   useEffect( () => {
@@ -23,6 +26,9 @@ export const EventScreen = () => {
   const locationVenue = event.location && event.location.venue;
   const locationAddress = event.location && event.location.address;
 
+  const addToCartHandler = () =>{
+    navigate(`/cart/${params.id}?qty=${qty}`)
+  }
 
 return (
     <>
@@ -121,11 +127,33 @@ return (
                   </Col>
                 </Row>
               </ListGroup.Item>
+              {event.spaceLeft > 0 && (
+                <ListGroup.Item>
+                  <Row>
+                    <Col>Qty</Col>
+                    <Col>
+                      <Form.Control
+                       as='select'
+                       value={qty}
+                      onChange={e => setQty(e.target.value)}
+                      >
+                        {
+                          [...Array(event.spaceLeft).keys()].map(x => (
+                          <option key={x+1} value={x+1}>{x+1}</option>))
+                        }
+                      </Form.Control>
+                    </Col>
+                  </Row>
+                </ListGroup.Item>
+              )
+
+              }
 
               <ListGroup.Item>
                 <Button
                   className="btn-block"
                   type="button"
+                  onClick={addToCartHandler}
                   disabled={event.spaceLeft === 0}
                 >
                   Add To Cart
