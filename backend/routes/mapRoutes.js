@@ -7,8 +7,6 @@ router.get('/:address', (req, res) => {
 
 
   res.json({mapURL})
-
-
  
 })
 
