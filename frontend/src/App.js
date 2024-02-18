@@ -8,6 +8,8 @@ import HomeScreen from "./screens/HomeScreen";
 import EventScreen from './screens/EventScreen';
 import CartScreen from './screens/CartScreen';
 import LoginScreen from './screens/LoginScreen';
+import ShippingScreen from './screens/ShippingScreen';
+import PaymentScreen from './screens/PaymentScreen';
 
 const App = () => {
   return (
@@ -22,6 +24,8 @@ const App = () => {
                 <Route path="/cart" element={<CartScreen />} />
                 <Route path="/cart/:id" element={<CartScreen />} />
                 <Route path='/login' element = { <LoginScreen/> } />
+                <Route path='/shipping' element = { <ShippingScreen/> } />
+                <Route path='/payment' element = { <PaymentScreen/> } />
               </Routes>
             </Container>
           </main>
