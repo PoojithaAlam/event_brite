@@ -14,7 +14,7 @@ dotenv.config()
 connectDB()
 
 app.use(express.json())
-app.use('api/users', userRoutes)
+app.use('/api/users', userRoutes)
 app.use('/api/events', eventRoutes)
 app.use('/api/map', mapRoutes)
 app.use(errorHandler)

@@ -1,29 +1,32 @@
 import React from 'react'
-import Footer from "./components/Footer";
-import Header from "./components/Header";
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import {Container} from 'react-bootstrap';
+
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 import HomeScreen from "./screens/HomeScreen";
-import { EventScreen} from './screens/EventScreen';
+import EventScreen from './screens/EventScreen';
 import CartScreen from './screens/CartScreen';
+import LoginScreen from './screens/LoginScreen';
 
 const App = () => {
   return (
     <>
-    <Router>
-   <Header/>
-   <main>
-   <Container>
-   <Routes>
-    <Route path="/" exact element={<HomeScreen />} />
-    <Route path="/event/:id" element={<EventScreen />} />
-    <Route path="/cart" element={<CartScreen />} />
-    <Route path="/cart/:id" element={<CartScreen />} />
-    </Routes>
-      </Container>
-      </main>
-      <Footer/>
-      </Router>
+        <Router>
+          <Header/>
+          <main>
+            <Container>
+              <Routes>
+                <Route path="/" exact element={<HomeScreen />} />
+                <Route path="/event/:id" element={<EventScreen />} />
+                <Route path="/cart" element={<CartScreen />} />
+                <Route path="/cart/:id" element={<CartScreen />} />
+                <Route path='/login' element = { <LoginScreen/> } />
+              </Routes>
+            </Container>
+          </main>
+          <Footer/>
+        </Router>
     </>
   );
 }
