@@ -7,6 +7,7 @@ import Message from '../components/Message'
 import Loader from '../components/Loader'
 import { getOrderDetails, getPaypalKey, payOrder } from '../actions/orderActions'
 import { ORDER_PAY_RESET } from '../constants/orderConstants'
+import { emptyCart } from '../actions/cartActions';
 
 const OrderScreen = () => {
   const params = useParams();
@@ -193,6 +194,9 @@ const OrderScreen = () => {
                           email_address: order.user.email
                         }
                         dispatch(payOrder(orderId, paymentResult))
+                    })
+                    .then(function () {
+                      dispatch(emptyCart())
                     });
                 }}
                         />

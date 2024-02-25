@@ -1,4 +1,4 @@
-import { CART_ADD_ITEM, CART_REMOVE_ITEM, CART_SAVE_PAYMENT_METHOD, CART_SAVE_SHIPPING_ADDRESS } from "../constants/cartConstants";
+import { CART_ADD_ITEM, CART_EMPTY_ITEM, CART_REMOVE_ITEM, CART_SAVE_PAYMENT_METHOD, CART_SAVE_SHIPPING_ADDRESS } from "../constants/cartConstants";
 
 
 
@@ -21,6 +21,12 @@ export const cartReducer = (state = {cartItems:[]}, action) => {
         ...state,
         cartItems:[...state.cartItems, item]
         }
+      }
+
+    case CART_EMPTY_ITEM:
+      return{
+        ...state,
+        cartItems:[]
       }
 
     case CART_REMOVE_ITEM:
