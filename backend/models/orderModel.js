@@ -16,15 +16,15 @@ const orderSchema = mongoose.Schema ({
     event: {
      type: mongoose.Schema.Types.ObjectId,
      required: true,
-     ref: 'events'
+     ref: 'events',
 
-    } 
-  } ],
+    }, 
+  }, ],
   shippingAddress: {
    address: { type: String, required: true },
    city: { type: String, required: true },
    postalCode: { type: String, required: true },
-   country: { type: String, required: true }
+   country: { type: String, required: true },
 
   },
   paymentMethod: {
@@ -50,7 +50,7 @@ const orderSchema = mongoose.Schema ({
   totalPrice: {
    type: Number,
    required: true,
-   default: 0.0
+   default: 0.0,
   },
   isPaid :{
    type: Boolean,
@@ -67,7 +67,7 @@ const orderSchema = mongoose.Schema ({
   },
   deliveredAt: {
    type: Date,
-  }
+  },
 
 }, {
  timestamps: true,
@@ -75,4 +75,4 @@ const orderSchema = mongoose.Schema ({
 
 const Order = mongoose.model('orders', orderSchema)
 
-export default Order;
+export default Order
