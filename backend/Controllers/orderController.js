@@ -48,7 +48,7 @@ export const addOrderItems = asyncHandler(async(req, res) => {
  })
 
  export const updateOrderToPaid = asyncHandler(async(req, res) => {
-  const order = await Order.findById(req.param.id)
+  const order = await Order.findById(req.params.id)
   if(order){
     order.isPaid = true
     order.paidAt = Date.now()
@@ -59,7 +59,7 @@ export const addOrderItems = asyncHandler(async(req, res) => {
       email_address: req.body.email_address
     }
 
-    const updatedOrder  = await Order.save()
+    const updatedOrder  = await order.save()
     res.json(updatedOrder)
 
   }else {
