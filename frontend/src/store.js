@@ -15,7 +15,6 @@ const rootReducer = combineReducers ({
   orderCreate: orderCreateReducer, 
   orderDetails: orderDetailsReducer, 
   orderPay: orderPayReducer,
-  userLogin: userLoginReducer,
   userRegister: userRegisterReducer,
   userDetails: userDetailsReducer,
   userUpdateProfile: userUpdateProfileReducer,
