@@ -1,6 +1,6 @@
 # App Demonstration video
 
-https://www.youtube.com/watch?v=hMoe3GmzK0w
+Youtube link: https://www.youtube.com/watch?v=hMoe3GmzK0w
 
 Website link: https://whispering-reef-26493-5c4259f9b7e8.herokuapp.com/
 
