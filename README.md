@@ -1,3 +1,5 @@
+Team Project by Poojitha, Euiri, Vandana, Sammy
+
 # App Demonstration video
 
 Youtube link: https://www.youtube.com/watch?v=hMoe3GmzK0w
