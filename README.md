@@ -1,4 +1,4 @@
-Team Project by Poojitha, Euiri, Vandana, Sammy
+# Team Project by Poojitha, Euiri, Vandana, Sammy
 
 # App Demonstration video
 
