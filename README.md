@@ -45,7 +45,7 @@ This is a full-stack Event Management application inspired by Eventbrite. It ena
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/PoojithaAlam/event_brite/blob/afe6a820fe407e39c9a622ccbd606e464c433a2c/EventBrite.png)
 
 ## App Demonstration video
 Youtube link: https://www.youtube.com/watch?v=hMoe3GmzK0w
