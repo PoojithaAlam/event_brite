@@ -43,18 +43,18 @@ This is a full-stack Event Management application inspired by Eventbrite. It ena
 ### ☁ Deployment
 - Heroku (frontend + backend)
 
-
-
-
-
-
-
-
-
 ## Screenshots
 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
+## App Demonstration video
+Youtube link: https://www.youtube.com/watch?v=hMoe3GmzK0w
+
+## Website link: https://whispering-reef-26493-5c4259f9b7e8.herokuapp.com/
+
+or
+
+Website link:https://eventbrite-6e7m.onrender.com
 
 ## Install dependencies
 
