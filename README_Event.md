@@ -50,11 +50,13 @@ This is a full-stack Event Management application inspired by Eventbrite. It ena
 ## App Demonstration video
 Youtube link: https://www.youtube.com/watch?v=hMoe3GmzK0w
 
-## Website link: https://whispering-reef-26493-5c4259f9b7e8.herokuapp.com/
+## Website link: 
+
+https://whispering-reef-26493-5c4259f9b7e8.herokuapp.com/
 
 or
 
-Website link:https://eventbrite-6e7m.onrender.com
+https://eventbrite-6e7m.onrender.com
 
 ## Install dependencies
 
